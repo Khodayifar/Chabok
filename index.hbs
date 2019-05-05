@@ -89,24 +89,6 @@
                    {{else}}
                         <p>{{{ excerpt }}}</p>
                    {{/if}}
-                    <p class="article__meta u-small">
-                        {{#author}}
-                            <a href="{{url}}" title="{{name}}">
-                                {{#if avatar}}
-                                    <img src="{{avatar}}" class="article__meta__avatar" alt="{{name}}">
-                                {{/if}}
-                                {{name}}
-                            </a>
-                        {{/author}}
-
-                        <time datetime="{{date createdAt 'YYYY-MM-DDTHH:mm'}}">
-							{{#checkIf @config.custom.formatDate '!=' 'custom'}}
-							    {{date createdAt @config.custom.formatDate}}
-							{{else}}
-							    {{date createdAt @config.custom.formatDateCustom}}
-							{{/checkIf}}
-						</time>
-                    </p>
                 </header>
             </article>
         {{/each}}
