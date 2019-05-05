@@ -1,6 +1,10 @@
-/* 
+/*
  * We can add our own CSS rules to the WYSIWYG editor; thanks to this we can style the post directly in the post editor to match the theme's style.
  */
+ body#tinymce {
+	direction: rtl;
+	font-family: IRANSans;
+}
 
 .post__image--left {
 	float: left;
